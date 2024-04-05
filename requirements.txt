@@ -13,3 +13,5 @@ python-dateutil
 datetime
 
 Pillow
+
+six

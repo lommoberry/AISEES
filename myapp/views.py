@@ -74,7 +74,7 @@ def register(request):
             token = account_activation_token.make_token(user)
             activation_link = reverse('activate', kwargs={'uidb64': uid, 'token': token})
             full_link = request.build_absolute_uri(activation_link)
-            send_mail('Activate your account', f'Please use this link to activate your account: {full_link}', 'from@example.com', [user.email])
+            send_mail('Activate your account', f'Please use this link to activate your account: {full_link}', 'xpt3bn@virginia.edu', [user.email])
             messages.info(request, 'Please confirm your email address to complete the registration')
             return redirect('home')
     else:
