@@ -1,0 +1,282 @@
+
+ 
+.content-indent {
+    margin-left: 20px; /* Adjust as needed */
+  }
+  .custom-color {
+    background-color: #bfd3cd; /* Example background color */
+    color: #333; /* Example text color */
+    margin-bottom: 50px;
+    margin-right: px;
+}
+.cus-color {
+  color: #ffffff; /* Example text color */
+  margin-top: 50;
+}
+.spacer {
+  margin-bottom: 50px; /* Adjust the space as needed */
+  
+}
+.search-container {
+  display: flex;
+  justify-content: center; /* Centers the search form horizontally */
+  align-items: center; /* Centers the search form vertically, if needed */
+  width: 100%; /* Ensures the container takes full width */
+}
+
+.search-form {
+  display: flex;
+  align-items: center; /* Aligns the form elements vertically */
+}
+
+.search-form input, .search-form button {
+  margin: 0 5px; /* Adds a small space between the input field and the button */
+}
+.form-control {
+  width: 90%;
+  /* You can add more styling rules here */
+}
+.research-item-detail {
+  padding-left: 7%;
+  /* You can add more styling rules here */
+}
+.indent-text {
+  padding-left: 20px;
+}
+  form {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 7%;
+  }
+  body, html {
+    color: #ffffff;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+
+  body {
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+
+  url(Balkans-1918-ethnographic.jpg) center no-repeat fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -ms-background-size: cover;
+  background-size: cover;
+}
+.text-box {
+background-color: rgba(98, 158, 130, 0.8);
+border-radius: 20px;
+margin: 2em auto;
+padding: 20px;
+width: 90%;
+}
+h1 {
+font-family: "Book Antiqua","Baskerville", serif;
+margin-top: 30px;
+padding: 0;
+font-size: 2.8em;
+color: #ffffff;
+text-align: center;
+letter-spacing: 2px;
+word-spacing: 5px;
+line-height: 1em;
+
+}
+
+h2 {
+    font-family: "Book Antiqua","Baskerville", serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1em;
+    margin-top: 30px;
+    }
+
+p {
+display: block;
+margin-left: 20;
+/* text-align: center; */
+font-size: 1.2em;
+line-height: 1.2em;
+}
+
+hr {
+width: 70%;
+margin: 10px auto;
+}
+
+.container {
+background-color: rgba(230, 230, 250,0.7);
+border-radius: 50px;
+margin: auto;
+margin-top: 20px;
+width: 90%;
+padding: 1em;
+
+}
+
+#survey-form {
+margin: 0 auto;
+width: 80%;
+padding: 10px;
+}
+
+.labels {
+display: inline-block;
+text-align: right;
+width: 40%;
+vertical-align: top;
+margin-top: 20px;
+}
+
+.input-tab {
+display: inline-block;
+text-align: left;
+width: 50%;
+margin-left: 10px;
+}
+.files {
+display: inline-block;
+text-align: right;
+width: 40%;
+vertical-align: top;
+margin-top: 20px;
+}
+
+.input-field {
+display: inline-block;
+width: 100%;
+padding: 5px;
+margin: 18px 0 0 10px;
+border: 1px solid #8a6b50;
+border-radius: 4px;
+font-family: "Book Antiqua","Baskerville", serif;
+font-size: 15px;
+
+}
+
+::-webkit-input-placeholder {
+ font-style: italic;
+font-weight: 300;
+}
+
+input {
+margin: 7px;
+}
+
+#dropdown {
+width: 100%;
+padding: 5px;
+margin: 20px 0 10px 10px;
+border: 1px solid #cfb39b;
+border-radius: 3px;
+font-family: "Book Antiqua","Baskerville", serif;
+font-size: 15px;
+}
+.btn {
+width: 100%;
+text-align: center;
+margin: 20px;
+}
+
+button {
+background-color: #6eb374;
+border-radius: 4px;
+color: white;
+font-size: 1em;
+font-family: "Book Antiqua","Baskerville", serif;
+padding: 10px 15px;
+border: 1px solid;
+}
+
+button:hover {
+background-color: #bf6516;
+}
+
+footer {
+text-align: center;
+font-size: 17px;
+margin: 20px;
+}
+
+footer a {
+color: #f39c12;
+position: relative;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+color: #f1c40f;
+}
+
+footer p {
+margin: 0;
+font-size: 17px;
+}
+.logo {
+position: fixed;
+top: 10px; /* Adjust as needed */
+right: 10px; /* Adjust as needed */
+z-index: 1000; /* Adjust as needed */
+}
+
+.logo img {
+width: 100px; /* Adjust the size of the logo */
+height: auto; /* Maintain aspect ratio */
+}
+
+/*if on phone,tablet, any where max width is less than or equal*/
+@media only screen and (max-width: 768px) {
+body{
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Balkans-1918-ethnographic.jpg) center no-repeat fixed;
+background-size: cover;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.labels {
+  width: 100%;
+  text-align: left;
+}
+.input-tab {
+  width: 100%;
+  float: left;
+  margin-left: -10px;
+}
+ .files {
+  width: 100%;
+  text-align: left;
+}
+
+.input-field {
+  width: 100%;
+}
+select {
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  margin: auto;
+}
+.logo {
+position: fixed;
+top: 10px; /* Adjust as needed */
+right: 10px; /* Adjust as needed */
+z-index: 1000; /* Adjust as needed */
+}
+
+.logo img {
+width: 100px; /* Adjust the size of the logo */
+height: auto; /* Maintain aspect ratio */
+}
+}

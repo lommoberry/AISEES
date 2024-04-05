@@ -1,0 +1,17 @@
+{% extends "myapp/base.html" %}
+{% load form_filters %}
+{% block content %}
+<div class="content-indent" style="text-align: left;">
+    <h2>Register</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="spacer"></div>
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="spacer"></div>
+    </form>
+</div>
+{% endblock %}
+ 

@@ -1,0 +1,17 @@
+<!-- upload_research_item.html -->
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="content-indent" style="text-align: left;"></div>
+	<h2>Upload Research Item</h2>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<div class="spacer"></div>
+		<div style="text-align: center;">
+			<button type="submit">Submit</button>
+		</div>
+		<div class="spacer"></div>
+	</form>
+</div>
+{% endblock %}

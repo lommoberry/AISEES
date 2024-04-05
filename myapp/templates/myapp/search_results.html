@@ -1,0 +1,17 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h2>Search Results</h2>
+
+{% if items %}
+    <p>Found {{ items.count }} research item(s) for "{{ query }}".</p>
+    <ul>
+        {% for item in items %}
+            <!-- Update the line below to create a link to the detail page -->
+            <li><a href="{% url 'research_item_detail' item.pk %}">{{ item.title }}</a> - {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No research items found.</p>
+{% endif %}
+{% endblock %}

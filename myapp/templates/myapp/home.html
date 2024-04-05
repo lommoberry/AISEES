@@ -1,0 +1,14 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+<div class="content-indent">
+
+  <h1>Welcome to the AISEES Database</h1>
+  <div class="search-container">
+    <form action="{% url 'search_results' %}" method="get" class="search-form">
+      <input type="text" name="q" placeholder="Search items...">
+      <button type="submit">Search</button>
+    </form>
+</div>
+
+{% endblock content %}

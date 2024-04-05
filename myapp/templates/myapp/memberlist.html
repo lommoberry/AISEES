@@ -1,0 +1,16 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+
+<body>
+    <h1>Members List</h1>
+    <ul>
+        {% for member in members %}
+            <li>{{ member.first_name }} {{ member.last_name }} - {{ member.affiliation_institution }}</li>
+        {% empty %}
+            <li>No members found.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+{% endblock content %}

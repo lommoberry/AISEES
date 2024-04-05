@@ -1,0 +1,38 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="research-item-detail indent-text">
+    <h2>{{ research_item.title }}</h2>
+    
+    <p style="margin-left: 20px;"><strong>Century:</strong> {{ research_item.century }}</p><br>
+    <p style="margin-left: 20px;"><strong>Description:</strong> {{ research_item.description }}</p><br>
+    <p style="margin-left: 20px;"><strong>Other Details:</strong> {{ research_item.other }}</p><br>
+    <p style="margin-left: 20px;"><strong>CE or BCE:</strong> {{ research_item.CE_or_BCE }}</p><br>
+    <p style="margin-left: 20px;"><strong>Author:</strong> {{ research_item.author }}</p><br>
+    <p style="margin-left: 20px;"><strong>Published Date:</strong> {{ research_item.published_date|date:"Y-m-d" }}</p><br>
+    <p style="margin-left: 20px;"><strong>Source:</strong> {{ research_item.source }}</p><br>
+    <p style="margin-left: 20px;"><strong>Subject:</strong> {{ research_item.subject }}</p><br>
+    <p style="margin-left: 20px;"><strong>Uploaded by:</strong> {{ research_item.uploaded_by }}</p><br>
+
+    <!-- Displaying countries of research focus -->
+    <p style="margin-left: 20px;"><strong>Countries:</strong>
+        {% for country in research_item.country.all %}
+            {{ country.name }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    </p><br>
+
+    <!-- Displaying the image if it exists -->
+	<p style="margin-left: 20px;"><strong>Image:</strong></p><br>
+    {% if research_item.image %}
+        <img src="{{ research_item.image.url }}" alt="{{ research_item.title }}" style="max-width: 90%; height: auto;margin-left: 20px;">
+    {% endif %}
+	<div class="spacer"></div>
+    <!-- Displaying the file if it exists -->
+	<p style="margin-left: 20px;"><strong>File:</strong><br>
+		{% if research_item.file %}
+		<a href="{{ research_item.file.url }}" style="color: #63aa9e; text-decoration: underline; font-weight: bold; max-width: 90%; height: auto;margin-left: 20px;">{{ research_item.file.name }}</a></p><br>
+	{% endif %}
+	
+</div>
+<div class="spacer"></div>
+{% endblock %}
