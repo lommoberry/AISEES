@@ -1,17 +1,19 @@
 Django==4.2.10
 
-django-bootstrap-v5
+django-bootstrap-v5==1.0.11
 
-django-bootstrap-icons
+django-bootstrap-icons==0.8.7
 
 openpyxl==3.0.9
 
 python-dateutil==2.8.2
 
-datetime
+datetime==5.4
 
 Pillow==9.0.0
 
 six==1.16.0
 
-python-dotenv==1.0.1
+python-dotenv==0.14.0
+
+cryptography==42.0.5
