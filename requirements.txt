@@ -1,17 +1,15 @@
-Django
+Django==4.2.10
 
 django-bootstrap-v5
 
 django-bootstrap-icons
 
-nltk
+openpyxl==3.0.9
 
-openpyxl
-
-python-dateutil
+python-dateutil==2.8.2
 
 datetime
 
-Pillow
+Pillow==9.0.0
 
-six
+six==1.16.0
