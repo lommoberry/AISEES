@@ -13,3 +13,5 @@ datetime
 Pillow==9.0.0
 
 six==1.16.0
+
+python-dotenv==1.0.1
